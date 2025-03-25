@@ -1,7 +1,7 @@
 kind: Pod
 apiVersion: V1
 metadata: 
-  name: labels
+  name: annotations
   annotataions:
     buildURL: "https://jenkins.com/expense/job/backend/23"
     imageregistry: "https://hub.docker.com/"
