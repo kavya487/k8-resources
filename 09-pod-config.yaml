@@ -1,4 +1,4 @@
-kind: Config
+kind: Pod
 apiVersion: v1
 metadata:
  name: pod-config
