@@ -1,20 +1,21 @@
+apiVersion: apps/v1
 kind: ReplicaSet
-apiversion: apps/v1
 metadata:
   name: nginx
   labels:
-    app: guestbook
-    tier: frontend
+    app: frontend
+    tier: web
 spec:
   replicas: 3
   selelctor:
     matchLabels:
-      tier: frontend
+      app: frontend
+      tier: web
   template:
     metadata:
       labels:
         tier: frontend
     spec:
       containers:
-      - name: php-redis
-      image:
+      - name: nginx
+        image: nginx
