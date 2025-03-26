@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     project: expense
-    module: backend
+    component: backend
     environment:  dev
     version: "1.0.0"
   ports:
@@ -21,7 +21,7 @@ metadata:
   name: backend
   labels:
       project: expense
-      module: backend
+      component: backend
       environment:  dev
       version: "1.0.0"
 spec:
